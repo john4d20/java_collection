@@ -10,8 +10,8 @@ public class StreamFilter {
     }
 
     public List<String> filterEndWithS(List<String> words) {
-//        return words.stream().filter(word -> word.substring(word.length() - 1) == 's').collect(Collectors.toList());
-        return null;
+        return words.stream().filter(word -> word.substring(word.length() - 1).equals("s")).collect(Collectors.toList());
+
     }
 
     public List<Integer> getCommonElements(List<Integer> numbers, List<Integer> anotherNumbers) {
